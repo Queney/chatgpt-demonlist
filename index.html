@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT's Demonlist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+            transition: background-color 0.3s;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+        h1 {
+            text-align: center;
+            color: #005f99;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #e0e0e0;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+        li:hover {
+            background-color: #d0d0d0;
+        }
+        .level-name {
+            font-weight: bold;
+            color: #003366;
+        }
+        .author-name {
+            color: #666;
+        }
+        /* Dark theme styles */
+        .dark-mode {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+        .dark-mode .container {
+            background-color: #2a2a2a;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        .dark-mode li {
+            background-color: #3a3a3a;
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+        }
+        .dark-mode li:hover {
+            background-color: #4a4a4a;
+        }
+        .dark-mode .level-name {
+            color: #88c0d0;
+        }
+        .dark-mode .author-name {
+            color: #a0a0a0;
+        }
+        /* Toggle button styles */
+        .toggle-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .toggle-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            font-size: 14px;
+        }
+        .toggle-switch {
+            position: relative;
+            width: 40px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 10px;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+        .toggle-knob {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            border-radius: 50%;
+            top: 1px;
+            left: 1px;
+            transition: transform 0.3s;
+        }
+        .dark-mode .toggle-switch {
+            background-color: #88c0d0;
+        }
+        .dark-mode .toggle-knob {
+            transform: translateX(20px);
+        }
+    </style>
+</head>
+<body>
+    <div class="toggle-container">
+        <label class="toggle-label">
+            <div class="toggle-switch">
+                <div class="toggle-knob"></div>
+            </div>
+            Dark mode
+        </label>
+    </div>
+    <div class="container">
+        <h1>ChatGPT's Demonlist</h1>
+        <ul>
+            <li>
+                <span class="level-name">1. Acheron</span> - <span class="author-name">Renn241</span>
+            </li>
+            <li>
+                <span class="level-name">2. Silent Clubstep</span> - <span class="author-name">TheRealSailent</span>
+            </li>
+            <li>
+                <span class="level-name">3. Avernus</span> - <span class="author-name">Cursed</span>
+            </li>
+            <li>
+                <span class="level-name">4. Hard Machine</span> - <span class="author-name">Komodo</span>
+            </li>
+            <li>
+                <span class="level-name">5. Ragnarok</span> - <span class="author-name">AZuLer8</span>
+            </li>
+            <li>
+                <span class="level-name">6. Firework</span> - <span class="author-name">maxfs</span>
+            </li>
+            <li>
+                <span class="level-name">7. Arcturus</span> - <span class="author-name">Cruso</span>
+            </li>
+            <li>
+                <span class="level-name">8. Tartarus</span> - <span class="author-name">Dolphy</span>
+            </li>
+            <li>
+                <span class="level-name">9. Sakupen Circles</span> - <span class="author-name">Diamond</span>
+            </li>
+            <li>
+                <span class="level-name">10. Verdant Landscape</span> - <span class="author-name">Wolvez</span>
+            </li>
+            <li>
+                <span class="level-name">11. Zodiac</span> - <span class="author-name">Xander556</span>
+            </li>
+            <li>
+                <span class="level-name">12. Kenos</span> - <span class="author-name">Tupan</span>
+            </li>
+            <li>
+                <span class="level-name">13. Sonic Wave Infinity</span> - <span class="author-name">APTeam</span>
+            </li>
+            <li>
+                <span class="level-name">14. Secoupin Circles</span> - <span class="author-name">Diamond</span>
+            </li>
+            <li>
+                <span class="level-name">15. Eternal Night</span> - <span class="author-name">skywalker</span>
+            </li>
+            <li>
+                <span class="level-name">16. Kyouki</span> - <span class="author-name">asmdf</span>
+            </li>
+            <li>
+                <span class="level-name">17. Phantasmagoria</span> - <span class="author-name">Muffy450</span>
+            </li>
+            <li>
+                <span class="level-name">18. Abyss of Darkness</span> - <span class="author-name">Exenity</span>
+            </li>
+            <li>
+                <span class="level-name">19. Sonic Wave</span> - <span class="author-name">CyClo</span>
+            </li>
+            <li>
+                <span class="level-name">20. Orochi</span> - <span class="author-name">lightninC</span>
+            </li>
+        </ul>
+    </div>
+    <script>
+        const toggleSwitch = document.querySelector('.toggle-label');
+
+        toggleSwitch.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
